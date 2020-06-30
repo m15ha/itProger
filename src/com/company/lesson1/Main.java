@@ -47,19 +47,38 @@ public class Main {
 
         String[] names = new String[]{"Mike", "Bob", "Dany"};
         String[] rank = new String[]{"Sniper", "Pusher", "Victim"};
+        Integer[] number1 = new Integer[]{1, 23, 44, 54};
 
         int mikeAge = 18;
         fullArr(mikeAge, names);
+        fullArr(number1);
+        fullArr(summ(2, 5));
     }
-        public static void fullArr(int age, String[] arr){
-            System.out.println("You skill level is " + age);
+
+    public static int summ(int a, int b) {
+        return a + b;
+    }
+
+    public static void fullArr(int age, String[] arr) {
+        System.out.println("You skill level is " + age);
         /*    for (int i = 0; i < arr.length; i++) {
                 System.out.println(arr[i]);
             }*/
-            for (String ar1: arr
-                 ) {
-                System.out.println(ar1);
-            }
+        for (String ar1 : arr
+        ) {
+            System.out.println(ar1);
         }
     }
+
+    public static void fullArr(Integer[] num) {
+        for (int n1 : num
+        ) {
+            System.out.println(n1);
+        }
+    }
+
+    public static void fullArr(int res1) {
+        System.out.println(res1);
+    }
+}
 

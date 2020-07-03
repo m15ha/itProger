@@ -1,6 +1,6 @@
 package com.company.lesson5;
 
-public class Car {
+abstract class Car {
     String model;
     int speed;
     int year;
@@ -20,4 +20,6 @@ public class Car {
         String isWorking = this.isWorking ? "Na hodu" : "Ne Na hodu";
         System.out.println(this.model + " " + this.speed + " " + this.year + " " + isWorking);
     }
+
+    abstract void startEngine();
 }
